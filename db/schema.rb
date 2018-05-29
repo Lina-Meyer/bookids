@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 2018_05_28_150146) do
   enable_extension "plpgsql"
 
   create_table "books", force: :cascade do |t|
-    t.string "sku"
     t.string "name"
     t.string "author"
     t.text "description"
     t.string "language"
+    t.integer "price"
     t.text "category"
     t.text "age"
     t.string "photo"
